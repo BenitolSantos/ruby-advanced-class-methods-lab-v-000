@@ -1,11 +1,11 @@
 require "pry"
 class Song
   attr_accessor :name, :artist_name
-  @@all = [] #class variable @@
+  @@all = [] #class variable @@all
 
   def self.all
     @@all #and goes here!
-  end
+  enda
 
   def save
     self.class.all << self #goes here
@@ -68,7 +68,7 @@ class Song
   end
 
   def self.destroy_all
-    @@all.clear
+    @@all.clear #remember @@all isn't @all
   end
 
 end
